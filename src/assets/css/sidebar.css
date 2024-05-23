@@ -1,0 +1,21 @@
+.sideImageStyle{
+  /* display: flex; */
+}
+.sideImageStyle figure{
+  width: 100%;
+}
+.sideImageStyle figure img{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+.sidebarUl{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  list-style: none;
+  text-align: center;
+  row-gap: 16px;
+  padding-top: 24px;
+}

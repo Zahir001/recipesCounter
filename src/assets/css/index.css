@@ -1,0 +1,189 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+figure,
+p {
+  margin: 0;
+}
+
+body {
+  font-family: Inter;
+  /* background-color: black; */
+}
+
+.sidebar {
+  width: 280px;
+  height: 100vh;
+  background-color: yellowgreen;
+  position: fixed;
+  overflow-y: auto;
+}
+
+.header {
+  padding: 40px 15px;
+  background-color: #5DA529;
+  color: white;
+  font-size: 20px;
+}
+
+.sideHeaderClass {
+  display: flex;
+
+}
+
+.rightSection {
+  margin-left: 280px;
+}
+
+.figureClass {
+  display: grid;
+  grid-template-columns: auto 450px;
+  column-gap: 10px;
+}
+
+.figureClass figure img {
+  width: 100%;
+}
+
+.figureClassOne {}
+
+.figureClassTwo figure {
+  width: 100%;
+}
+
+.figureClassTwo figure img {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+}
+
+.figureClassTwo {
+  padding: 22px;
+  background: #e2f0cc;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 22px;
+}
+
+.figureClassTwo p {
+  text-align: justify;
+}
+
+.rate {
+  float: left;
+  height: 46px;
+  padding: 0 10px;
+}
+
+.rate:not(:checked)>input {
+  position: absolute;
+  top: -9999px;
+}
+
+.rate:not(:checked)>label {
+  float: right;
+  width: 1em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+
+.rate:not(:checked)>label:before {
+  content: '★ ';
+}
+
+.rate>input:checked~label {
+  color: #ffc700;
+}
+
+.rate:not(:checked)>label:hover,
+.rate:not(:checked)>label:hover~label {
+  color: #ffc700;
+}
+
+.rate>input:checked+label:hover,
+.rate>input:checked+label:hover~label,
+.rate>input:checked~label:hover,
+.rate>input:checked~label:hover~label,
+.rate>label:hover~input:checked~label {
+  color: #ffc700;
+}
+
+.ratingParent {
+  display: flex;
+  align-items: center;
+}
+
+.nutritionalFacts {
+  width: 70%;
+  margin: auto;
+  padding: 15px;
+  border: 3px solid #69af69;
+  border-radius: 5px;
+  margin-top: 24px;
+  position: relative;
+}
+
+.nutritionalFacts h5 {
+  width: fit-content;
+  background: white;
+  position: absolute;
+  top: -13px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.nutritionalFacts .perServing {
+  font-size: 14px;
+}
+
+.nutritionalFactsChild {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid greenyellow;
+}
+
+.nutritionalFactsChild>div {
+  display: flex;
+  flex-direction: column;
+}
+
+.nutritionalFacts p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: gray;
+}
+
+.nutritionalFactsChild .nutritextOne {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: teal;
+}
+
+.nutritionalFactsChild .nutritextTwo {
+  font-size: .875rem;
+  font-weight: 700;
+  color: #222;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+.howTwoMake span{
+  font-size: 26px;
+  font-weight: 500;
+}
+.howTwoMake ul li{
+  list-style: decimal;
+}
+.howTwoMake ul li::marker{
+  font-weight: 500;
+}
+.instructionTitle span{
+  
+}
